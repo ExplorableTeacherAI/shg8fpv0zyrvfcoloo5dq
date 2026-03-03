@@ -121,4 +121,11 @@ export const blocks: ReactElement[] = [
             />
         </Block>
     </StackLayout>,
+    <StackLayout key="layout-chart-explanation" maxWidth="xl">
+        <Block id="block-chart-explanation" padding="lg">
+            <EditableParagraph id="para-chart-explanation" blockId="block-chart-explanation">
+                The chart above tells a compelling story. Notice how understanding doesn't grow in sudden leaps — it builds gradually, week by week, as students engage with mathematical concepts through exploration rather than memorisation. The smooth upward curve reflects what researchers have consistently found: when learners interact with ideas, test their intuitions, and see immediate feedback, knowledge becomes durable. By Week 8, students aren't just remembering formulas — they understand why those formulas work, and that understanding stays with them far longer than any memorised procedure ever could.
+            </EditableParagraph>
+        </Block>
+    </StackLayout>,
 ];
