@@ -1,6 +1,7 @@
 import { type ReactElement } from "react";
-// import { Block } from "@/components/templates";
-// import { StackLayout, SplitLayout, GridLayout, ScrollytellingLayout, ScrollStep, ScrollVisual } from "@/components/layouts";
+import { Block } from "@/components/templates";
+import { StackLayout } from "@/components/layouts";
+import { EditableH1, EditableParagraph } from "@/components/atoms";
 
 // Initialize variables and their colors from this file's variable definitions
 import { useVariableStore, initializeVariableColors } from "@/stores";
@@ -85,5 +86,14 @@ initializeVariableColors(variableDefinitions);
  */
 
 export const blocks: ReactElement[] = [
-    // Start adding your blocks here!
+    <StackLayout key="layout-maths-education" maxWidth="xl">
+        <Block id="block-maths-education" padding="lg">
+            <EditableH1 id="h1-maths-education" blockId="block-maths-education">
+                The Power of Active Learning in Mathematics
+            </EditableH1>
+            <EditableParagraph id="para-maths-education" blockId="block-maths-education">
+                Mathematics is not a spectator sport. For centuries, students have been taught to watch, memorise, and reproduce — but rarely to explore. Yet the most profound mathematical understanding comes not from passive observation, but from active experimentation. When students can manipulate a variable and watch a graph respond, drag a point and see a theorem come alive, or build a shape and discover its hidden properties, mathematics transforms from a set of rules to be memorised into a living, breathing landscape to be explored. This is the heart of explorable explanations: turning every reader into a mathematical explorer.
+            </EditableParagraph>
+        </Block>
+    </StackLayout>,
 ];
