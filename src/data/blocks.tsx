@@ -2,6 +2,7 @@ import { type ReactElement } from "react";
 import { Block } from "@/components/templates";
 import { StackLayout } from "@/components/layouts";
 import { EditableH1, EditableParagraph } from "@/components/atoms";
+import { FullWidthLayout } from "@/components/layouts";
 
 // Initialize variables and their colors from this file's variable definitions
 import { useVariableStore, initializeVariableColors } from "@/stores";
@@ -86,10 +87,17 @@ initializeVariableColors(variableDefinitions);
  */
 
 export const blocks: ReactElement[] = [
+    <FullWidthLayout key="layout-block-1772509596538" maxWidth="xl">
+        <Block id="block-1772509596538" padding="sm">
+            <EditableH1 id="h1-block-1772509596538" blockId="block-1772509596538">
+                The Power of Active Learning in Mathematic
+            </EditableH1>
+        </Block>
+    </FullWidthLayout>,
     <StackLayout key="layout-maths-education" maxWidth="xl">
         <Block id="block-maths-education" padding="lg">
             <EditableH1 id="h1-maths-education" blockId="block-maths-education">
-                
+
 
             </EditableH1>
             <EditableParagraph id="para-maths-education" blockId="block-maths-education">
